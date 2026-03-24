@@ -1,3 +1,18 @@
-body {
+@use 'utils/variables';
+@use 'utils/mixins';
+@use 'blocks/page';
+@use 'blocks/header';
+@use 'blocks/top-bar';
+@use 'blocks/icon';
+@use 'blocks/menu';
+@use 'blocks/nav';
+@use 'blocks/section-title';
+@use 'blocks/main';
+
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
