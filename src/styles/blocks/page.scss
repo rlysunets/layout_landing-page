@@ -1,8 +1,6 @@
 .page {
-  font-family: Manrope, sans-serif;
   line-height: 140%;
   scroll-behavior: smooth;
-  color: #1b2129;
 
   &__body {
     margin: 0;
@@ -12,7 +10,7 @@
   &__menu {
     position: fixed;
     inset: 0;
-    background: #fff;
+    background: var(--c-white);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s;
@@ -24,4 +22,8 @@
       transform: translateX(0);
     }
   }
+}
+
+.page:has(.page__menu:target) {
+  overflow: hidden;
 }

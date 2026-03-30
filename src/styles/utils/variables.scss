@@ -1,2 +1,13 @@
-$tablet-min-width: 576px;
+:root {
+  --font-family: Manrope, sans-serif;
+  --c-white: #fff;
+  --c-input: #f9f9f9;
+  --c-beige: #fcfaef;
+  --c-gray: #dbdbdb;
+  --c-dark-gray: #9393a3;
+  --c-black: #1b2129;
+  --c-orange: #f98921;
+}
+
+$tablet-min-width: 744px;
 $desktop-min-width: 1024px;
