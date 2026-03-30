@@ -30,11 +30,11 @@
 
   &__content {
     display: grid;
-    gap: 24px;
-    padding-block: 48px;
+    gap: var(--space-6);
+    padding-block: var(--space-12);
 
     @include on-tablet {
-      padding-block: 120px;
+      padding-block: var(--space-30);
       grid-template-columns: 1fr 1fr;
     }
 

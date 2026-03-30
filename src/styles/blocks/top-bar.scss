@@ -1,13 +1,13 @@
 @use '../utils/mixins' as *;
 
 .top-bar {
-  padding-block: 24px;
+  padding-block: var(--space-6);
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @include on-tablet {
-    padding-block: 32px;
+    padding-block: var(--space-8);
   }
 
   &__logo-link {
@@ -29,6 +29,6 @@
 
   &__icons {
     display: flex;
-    gap: 24px;
+    gap: var(--space-6);
   }
 }

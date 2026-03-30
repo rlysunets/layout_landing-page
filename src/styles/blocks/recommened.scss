@@ -3,12 +3,12 @@
 .recommended__products {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px 24px;
-  margin-bottom: 96px;
+  gap: var(--space-10) var(--space-6);
+  margin-bottom: var(--space-24);
 
   @include on-tablet {
-    row-gap: 56px;
-    margin-bottom: 120px;
+    row-gap: var(--space-14);
+    margin-bottom: var(--space-30);
   }
 
   @include on-desktop {
@@ -23,7 +23,7 @@
   &__image {
     background-color: var(--c-input);
     border-radius: 4px;
-    margin-bottom: 24px;
+    margin-bottom: var(--space-6);
     overflow: hidden;
 
     img {
@@ -44,7 +44,7 @@
     font-size: 18px;
     line-height: 140%;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: var(--space-2);
   }
 
   &__info {
@@ -52,7 +52,7 @@
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 0.15px;
-    margin-bottom: 12px;
+    margin-bottom: var(--space-3);
   }
 
   &__price {
