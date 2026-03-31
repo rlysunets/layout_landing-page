@@ -16,6 +16,24 @@
 
   &--phone {
     background-image: url(../icons/phone.svg);
+    position: relative;
+
+    span {
+      position: absolute;
+      right: calc(100% + var(--space-2));
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+      width: max-content;
+      color: var(--c-black);
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 2px;
+      transition: opacity 0.3s;
+      opacity: 0;
+      pointer-events: none;
+    }
   }
 
   &--menu {
@@ -28,5 +46,11 @@
 
   &--close {
     background-image: url(../icons/burger-close.svg);
+  }
+}
+
+@include on-desktop {
+  .icon--phone:hover span {
+    opacity: 1;
   }
 }
